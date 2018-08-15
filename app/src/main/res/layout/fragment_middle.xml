@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_middle_background"
+                tools:context=".MiddleFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#51000000">
+
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:text="1/100"
+            android:textColor="#dbdbdb"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:text="Best"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:background="#51000000">
+
+            <View
+                android:alpha="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_mean"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="最好的"
+                android:textColor="#ffffff"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_remember"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#81000000"
+                android:text="认识"
+                android:textColor="#ffffff"
+                android:textSize="18sp"/>
+            <View
+                android:alpha="0.5"
+                android:background="#ffffff"
+                android:layout_width="1px"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/bt_not_remember"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#81000000"
+                android:text="不认识"
+                android:textColor="#ffffff"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
